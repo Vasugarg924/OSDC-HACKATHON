@@ -13,5 +13,5 @@ Make a mongoDB account and add the uri to .env.
 In both 'frontend' and 'backend' directory, do npm run dev to start the backend and frontend server.
 
 * Then came back to OSDC-HACKATHONE file
-Do npm i
-Do node app.js
+* Do npm i
+* Do node app.js
