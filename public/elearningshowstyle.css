@@ -1,0 +1,101 @@
+/* body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.custom-card {
+    background-color: #000;
+    border: 2px solid #00f;
+    border-radius: 10px; 
+    margin-bottom: 20px; 
+    overflow: hidden; 
+}
+
+.custom-card .card-title,
+.custom-card .card-text,
+.custom-card .card-link {
+    color: #00f;
+}
+
+.custom-card .card-link:hover {
+    text-decoration: underline; 
+}
+
+
+.embed-responsive-16by9::before {
+    padding-top: 56.25%;
+}
+
+@media (max-width: 576px) {
+    
+    .custom-card {
+        max-width: 100%;
+    }
+}
+.bgimage{
+
+} */
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for each container */
+.custom-card {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #00f;
+    border-radius: 10px;
+    margin-right: 20px; /* Add space between cards */
+    overflow: hidden;
+    width: calc(50% - 20px); /* Arrange containers side by side */
+    float: left; /* Float containers to achieve horizontal arrangement */
+    box-sizing: border-box; /* Include border in width calculation */
+}
+
+/* Text alignment */
+.custom-card .card-title,
+.custom-card .card-text,
+.custom-card .card-link {
+    color: #fff;
+    text-align: center; /* Align text to center */
+}
+
+.custom-card .card-link:hover {
+    text-decoration: underline;
+}
+
+/* Make the iframe responsive */
+.embed-responsive-16by9::before {
+    padding-top: 56.25%;
+}
+
+@media (max-width: 576px) {
+    /* Adjust styles for smaller screens */
+    .custom-card {
+        width: 100%; /* Set full width on smaller screens */
+        margin-right: 0; /* Remove right margin */
+    }
+}
+
+.bgimage {
+    background-image: url('elearn bag image2.jpg'); /* Replace 'background-image.jpg' with your image file */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; /* Text color on top of the background image */
+    width: 100%;
+}
+.text-primary{
+    color: white !important;
+}
