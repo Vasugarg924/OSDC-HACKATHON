@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap 5.3 Card Example</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    /* Custom CSS for aligning center */
+    .Center-align {
+      justify-content: center;
+    }
+body{
+    background-image: url("2305.w026.n002.3580B.p1.3580.jpg");
+    background-size: cover;
+  background-position: center;
+    z-index:-1;
+
+}
+    /* Media query for screens less than 800px */
+    @media (max-width: 800px) {
+      .d-flex.flex-nowrap.Center-align {
+        flex-wrap: wrap; /* Allow cards to wrap to a new line */
+      }
+      .card {
+        width: calc(50% - 20px); /* Set card width to 50% of the container minus margins */
+        margin: 10px; /* Add margin around cards */
+      }
+    }
+    body {
+  /* Add background image */
+  background-image: url("background image events.jpg");
+  /* Set background size and position */
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+    .card, .list-group-item{
+        background-color: #018991;
+    }
+    .card-body{
+        height: 8rem;
+        align-items: center;
+    }
+    .card-title{
+        text-align: center;
+    }
+    .list-group{
+        margin-top: 4rem;
+    }
+  </style>
+</head>
