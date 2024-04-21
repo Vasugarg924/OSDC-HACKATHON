@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Light grey background */
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+
+.container {
+    max-width: 600px; /* Reduced max-width */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ccc; /* Grey background */
+    border-radius: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for background color and box shadow change */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth effect */
+}
+
+
+h2 {
+    margin-top: 0;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="url"] {
+    width: 100%;
+    padding: 5px; /* Reduced padding */
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    transition: border-color 0.3s ease; /* Smooth transition for border color change */
+    font-size: 14px; /* Reduced font size */
+}
+
+input[type="text"]::placeholder,
+input[type="url"]::placeholder {
+    font-size: 12px; /* Reduced font size for placeholders */
+}
+
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker background color on hover */
+}
+
+.expert-profiles {
+    display: none;
+    margin-top: 20px;
+}
+
+.expert-profile {
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease; /* Smooth transition for opacity change */
+}
+
+.expert-profile:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add shadow on hover for depth effect */
+}
+
+.expert-profile a {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease; /* Smooth transition for text color change */
+}
+
+.expert-profile a:hover {
+    color: #0056b3; /* Darker text color on hover */
+}
+video {
+    position: fixed; /* Fixed position to cover the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%; /* Make video fill the entire viewport */
+    height: 100%;
+    object-fit: cover; /* Cover the entire viewport */
+    z-index: -1; /* Set z-index to be behind other content */
+  }
+  .container{
+    opacity: 0.8;
+  }
