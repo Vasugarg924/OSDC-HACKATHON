@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moving YouTube Video Thumbnails</title>
+<link rel="stylesheet" href="home.css">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+ 
+<div class="container">
+  <div class="moving-thumbnails">
+    <div class="thumbnail">
+      <img src="WhatsApp Image 2024-04-20 at 21.14.17.jpeg" alt="Video 1">
+    </div>
+    <div class="thumbnail">
+      <img src="WhatsApp Image 2024-04-20 at 21.14.47.jpeg" alt="Video 2">
+    </div>
+    <div class="thumbnail">
+        <img src="WhatsApp Image 2024-04-20 at 21.16.20.jpeg" alt="Video 3">
+      </div>
+      <div class="thumbnail">
+        <img src="WhatsApp Image 2024-04-20 at 21.17.07.jpeg" alt="Video 4">
+      </div>
+      <div class="thumbnail">
+        <img src="WhatsApp Image 2024-04-20 at 21.19.11.jpeg" alt="Video 5">
+      </div>
+      <div class="thumbnail">
+            <img src="WhatsApp Image 2024-04-20 at 21.20.00.jpeg" alt="Video 6">
+          </div>
+      </div>
+    <!-- Add more thumbnail divs as needed -->
+  </div>
+</div>
+<!-- Footer section with Font Awesome icons -->
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Footer section -->
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Footer section with company name, about us, and contact us -->
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Footer section with company name, about us, and contact us -->
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="background.js"></script>
+<!-- Footer section with company name, about us, and contact us -->
+<!-- Footer section with company name, about us, and contact us -->
+<!-- Footer section with company name, about us, and contact us -->
+
+</body>
+<footer style="background-color: #333; padding: 20px; width: 100%; box-sizing: border-box; position: relative; color: #fff;">
+
+    <!-- Company name and logo (Clickable) -->
+    <a href="#" id="scrollToTop" style="text-decoration: none; display: flex; align-items: center;">
+        <img src="Untitled design (2).png" alt="Company Logo" style="width: 70px; height: 70px; margin-right: 10px;">
+        <h3 style="font-size: 24px;color: #fff; margin: 0;">UniVerse</h3>
+    </a>
+
+    <!-- About Us section -->
+    <div style="padding: 15px; border-radius: 10px; margin-top: 20px; cursor: pointer;" onmouseover="this.style.backgroundColor='#000'; this.style.color='#fff';" onmouseout="this.style.backgroundColor='grey'; this.style.color='#000';">
+        <h4>About Us</h4>
+        <p>At UniVerse, we are dedicated to revolutionizing the way students access educational resources and connect with peers across various colleges. We understand the challenges students face during exam times, especially when it comes to retrieving quality study materials. With our platform, we aim to address these challenges by providing a comprehensive solution that fosters collaboration, community-building, and resource optimization.</p>
+    </div>
+
+    <!-- Contact Us section -->
+    <div style="margin-top: 20px;">
+        <h4>Contact Us</h4>
+        <ul style="list-style-type: none; padding: 0; margin: 0; display: flex; align-items: center;">
+            <li style="margin-right: 20px;"><a href="https://www.instagram.com/" style="color: #fff;"><i class="fa fa-instagram" style="font-size: 24px;"></i></a><br>Instagram</li>
+            <li style="margin-right: 20px;"><a href="https://www.facebook.com/" style="color: #fff;"><i class="fa fa-facebook" style="font-size: 24px;"></i></a><br>Facebook</li>
+            <li style="margin-right: 20px;"><a href="https://twitter.com/?lang=en" style="color: #fff;"><i class="fa fa-twitter" style="font-size: 24px;"></i></a><br>Twitter</li>
+        </ul>
+        <br>
+        <ul style="list-style-type: none; padding: 0; margin: 0;">
+            <li><i class="fa fa-phone" style="font-size: 24px;"></i>+918302757670</li><br>
+            <li><a
+                    href="https://www.google.com/maps/place/JAYPEE+INSTITUTE+OF+INFORMATION+TECHNOLOGY/@28.6312137,77.3683335,17z/data=!3m1!4b1!4m6!3m5!1s0x390ce551491b3ce7:0x7335d9fcfd4d9db0!8m2!3d28.631209!4d77.3709084!16zL20vMDlqcXJt?entry=ttu"style="color: #fff;"><i
+                        class="fa fa-map-marker" style="font-size: 24px;"></i>JAYPEE INSTITUTE OF INFORMATION TECHNOLOGY ,NOIDA</a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+
+
+<style>
+    .fa:hover {
+        animation: rotate 0.5s linear infinite;
+    }
+
+    @keyframes rotate {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+
+<script>
+    document.getElementById("scrollToTop").addEventListener("click", function(event) {
+    event.preventDefault();
+    document.documentElement.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+document.addEventListener("DOMContentLoaded", function() {
+    const thumbnailsContainer = document.querySelector('.moving-thumbnails');
+    const thumbnails = document.querySelectorAll('.thumbnail');
+    const numThumbnails = thumbnails.length;
+    const thumbnailWidth = thumbnails[0].offsetWidth;
+
+    let currentPosition = 0;
+
+    // Clone the thumbnails and append them after the last thumbnail
+    for (let i = 0; i < numThumbnails; i++) {
+        const clone = thumbnails[i].cloneNode(true);
+        thumbnailsContainer.appendChild(clone);
+    }
+
+    function moveThumbnails() {
+        currentPosition -= 1;
+        thumbnailsContainer.style.transform = `translateX(${currentPosition}px)`;
+
+        if (currentPosition <= -thumbnailWidth * numThumbnails) {
+            currentPosition = 0;
+            thumbnailsContainer.style.transform = `translateX(${currentPosition}px)`;
+        }
+
+        requestAnimationFrame(moveThumbnails);
+    }
+
+    moveThumbnails();
+});
+
+
+</script>
+
+
+
+
+</html>
