@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subject Selector</title>
+    <link rel="stylesheet" href="youtubestyle.css">
+</head>
+<body>
+    <div class="nav-container">
+        <nav>
+            <ul class="mobile-nav">
+                <li>
+                    <div class="menu-icon-container">
+                        <div class="menu-icon">
+                            <span class="line-1"></span>
+                            <span class="line-2"></span>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#" class="link-logo"></a>
+                </li>
+
+                <li>
+                    <a href="" class="link-bag"></a>
+                </li>
+            </ul>
+
+            <ul class="desktop-nav">
+                <li>
+                    <a href="#" class="link-logo"></a>
+                </li>
+                <li>
+                    <a href="/youtube">  <span><div><img src="Designer-fotor-bg-remover-2024042002715.png "alt="LOGO" width="40px"height="40px" ></div></span></a>
+                </li>
+                <li>
+                    <a href="#" id="eLearning">eLearning <span class="dropdown-arrow">▼</span></a>
+                    <ul class="dropdown" id="eLearningDropdown">
+                        <li><a href="youtube.html" class="dropdown-option">Youtube Lectures</a></li>
+                        <li><a href="#" class="dropdown-option">eBooks</a></li>
+                    </ul>                    
+                </li>
+                <li>
+                    <a href="#">Events</a>
+                </li>
+                <li>
+                    <a href="#">Doubt Forums</a>
+                </li>
+                <li>
+                    <a href="#">Publish</a>
+                </li>
+                <li>
+                    <a href="#" class="Profile">Profile</a>
+                </li>
+                <li>
+                    <a href="#" class="link-search"></a>
+                </li>
+                <li>
+                    <a href="#" class="link-bag"></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+<br>
+<br>
+<br>
+<br>
+<div class="corner-selector">
+    <h2>Hey! Select Your Subject</h2>
+    <select id="subjectSelect">
+        <!-- Subject options will be dynamically generated here -->
+    </select>
+    <div>
+        <label for="topicInput">Enter topic or syllabus:</label>
+        <input type="text" id="topicInput">
+        <button id="searchButton">Search</button>
+    </div>
+</div>
+<div class="youtube-links" id="youtubeLinks">
+    <!-- YouTube links will be displayed here -->
+</div>
+<div>
+    <h4>Want to Learn Automata!</h4>
+    <h2>Try this </h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=DbiSMTuIhwG-ngaN&amp;list=PLLOxZwkBK52CTVrHjYa7-SpXlEtef1TqL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+<script>
+    // Simulating the user's semester (change this logic with actual server-side logic)
+    const userSemester = 'SEM2'; // Change this to SEM2 or any other semester as needed
+
+    // Function to generate subject options based on the semester
+    function generateSubjectOptions(semester) {
+        const subjectSelect = document.getElementById('subjectSelect');
+
+        // Clear previous options
+        subjectSelect.innerHTML = '';
+
+        // Define subject options based on the semester
+        const subjectOptions = {
+            'SEM1': ['SDF-1', 'English', 'Physics-1', 'Mathematics-1', 'Engineering Drawing'],
+            'SEM2': ['SDF-2', 'Electrical Science-1', 'Physics-2', 'WorkShop', 'LifeSkills'],
+            'SEM3': ['TFCS', 'DATA STRUCTURES', 'DATA SYSTEM AND WEB', 'Electrical Science-2', 'Economics']
+            // Add more semesters and their respective subjects as needed
+        };
+
+        // Create and append options to select element
+        subjectOptions[semester].forEach(subject => {
+            const option = document.createElement('option');
+            option.value = subject.toLowerCase();
+            option.textContent = subject;
+            subjectSelect.appendChild(option);
+        });
+    }
+
+    // Call the function to generate subject options based on the user's semester
+    generateSubjectOptions(userSemester);
+
+    // Object mapping topics to video URLs
+    const videoLinks = {
+        'data structures': 'https://youtube.com/playlist?list=PLdo5W4Nhv31bbKJzrsKfMpo_grxuLl8LU&si=NIW9URTNqVyNGvCs',
+        'data system and web': 'https://www.youtube.com/watch?v=videoseries&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P',
+        'tfcs': 'https://www.youtube.com/watch?v=videoseries&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P',
+        'electrical science-2': 'https://www.youtube.com/watch?v=videoseries&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P',
+        'economics': 'https://www.youtube.com/watch?v=videoseries&list=PL2_aWCzGMAwI3W_JlcBbtYTwiQSsOTa6P'
+        // Add more topics and their corresponding video links as needed
+    };
+
+    // Object mapping subjects to their syllabus links
+    const syllabusLinks = {
+        'sdf-1': 'https://example.com/sdf1-syllabus',
+        'english': 'https://example.com/english-syllabus',
+        'physics-1': 'https://example.com/physics1-syllabus',
+        'mathematics-1': 'https://example.com/mathematics1-syllabus',
+        'engineering drawing': 'https://example.com/engineering-drawing-syllabus',
+        'sdf-2': 'https://example.com/sdf2-syllabus',
+        'electrical science-1': 'https://example.com/electrical-science1-syllabus',
+        'physics-2': 'https://example.com/physics2-syllabus',
+        'workshop': 'https://example.com/workshop-syllabus',
+        'lifeskills': 'https://example.com/lifeskills-syllabus',
+        'tfcs': 'https://example.com/tfcs-syllabus',
+        'data structures': 'https://example.com/data-structures-syllabus',
+        'data system and web': 'https://example.com/data-system-web-syllabus',
+        'electrical science-2': 'https://example.com/electrical-science2-syllabus',
+        'economics': 'https://example.com/economics-syllabus'
+        // Add more subjects and their corresponding syllabus links as needed
+    };
+
+    // Function to handle search button click
+    document.getElementById('searchButton').addEventListener('click', function() {
+        const subject = document.getElementById('subjectSelect').value;
+        const input = document.getElementById('topicInput').value.toLowerCase().trim();
+        const youtubeLinks = document.getElementById('youtubeLinks');
+
+        // Clear previous links
+        youtubeLinks.innerHTML = '';
+
+        if (input !== '') {
+            // Check if input matches a topic
+            if (videoLinks.hasOwnProperty(input)) {
+                const link = document.createElement('a');
+                link.href = videoLinks[input];
+                link.textContent = 'Watch Recommended Videos';
+                link.target = '_blank'; // Open link in a new tab
+                youtubeLinks.appendChild(link);
+            } else {
+                // Check if input matches a syllabus
+                if (syllabusLinks.hasOwnProperty(input)) {
+                    const link = document.createElement('a');
+                    link.href = syllabusLinks[input];
+                    link.textContent = 'View Syllabus';
+                    link.target = '_blank'; // Open link in a new tab
+                    youtubeLinks.appendChild(link);
+                } else {
+                    // If input does not match any topic or syllabus
+                    youtubeLinks.textContent = 'No recommended videos or syllabus found for this input.';
+                }
+            }
+        } else {
+            alert('Please enter a topic or syllabus.');
+        }
+    });
+</script>
+</body>
+</html>

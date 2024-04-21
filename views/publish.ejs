@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publish Information</title>
+  <link rel="stylesheet" href="publish_style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Publish Information</h1>
+    <form id="publishForm" method="post" action="/publish">
+      <label for="college"><b>College Name:</b></label>
+      <input type="text" id="college" name="college"><br>
+      
+      <label for="course"><b>Course:</b></label>
+      <input type="text" id="course" name="course"><br>
+      
+      <label for="semester"><b>Semester:</b></label>
+      <input type="text" id="semester" name="semester"><br>
+      
+      <label for="subject"><b>Subject:</b></label>
+      <input type="text" id="subject" name="subject"><br>
+      
+      <label for="topic"><b>Topic:</b></label>
+      <input type="text" id="topic" name="topic"><br>
+
+      <label for="youtubelink"><b>Youtube Link:</b></label>
+      <input type="text" id="youtubelink" name="youtubelink"><br>
+
+      <label for="bookslink"><b>Books Link:</b></label>
+      <input type="text" id="bookslink" name="bookslink"><br>
+      
+      <button type="submit">Submit</button>
+    </form>
+    <!-- <div id="options" style="display: none;">
+        <h2>Select an Option:</h2>
+        <button id="publishNotes" onclick="window.location.href='notes_books.html';">Publish Notes/Books</button>
+        <button id="publishLink" onclick="window.location.href='publish_link.html';">Publish Link</button>
+      </div> -->
+  </div>
+  <!-- <script src="publish_script.js"></script> -->
+</body>
+</html>
