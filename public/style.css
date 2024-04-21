@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Existing styles for the login container */
+.login-container {
+    background-color: #808080;
+    max-width: 450px; /* Increased max-width to 450px */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative; /* Add position relative */
+}
+
+/* Additional styles for the social buttons container */
+.social-buttons {
+    position: absolute;
+    left: 50%; /* Position from the center */
+    transform: translateX(-50%); /* Center the buttons horizontally */
+    bottom: 50px; /* Move the buttons 20px up from the bottom of the login container */
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+h2 {
+    margin-top: 0;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+/* Styles for individual social buttons */
+.social-buttons button {
+    margin: 0 5px; /* Add margin to create space between buttons */
+    padding: 10px 20px; /* Add padding to buttons */
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.social-buttons button:hover {
+    background-color: #0056b3;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.signup-link {
+    margin-top: 20px;
+}
+/*signup conatiner css*/
+.signup-container {
+    background-color: #808080;
+    max-width: 450px; /* Increased max-width to 450px */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px auto; /* Center the signup container */
+    opacity: 0.9;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.signup-message {
+    color: green;
+    text-align: center;
+    margin-top: 10px;
+}
+.logo{
+    height: 12rem;
+    margin-bottom: 10px;
+}
+.bgimage {
+    background-image: url('signup background.jpg'); /* Replace 'background-image.jpg' with your image file */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; /* Text color on top of the background image */
+    width: 100%;
+}
