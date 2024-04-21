@@ -1,0 +1,74 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eLearning Show</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="elearningshowstyle.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5 mb-4 text-primary">eLearning Show</h1>
+        <% foundDocuments.forEach(function(document) { %>
+            <div class="card mb-3 custom-card" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="<%= document.youtubelink %>" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title"><%= document.name %></h5>
+                            <p class="card-text">College: <%= document.college %></p>
+                            <p class="card-text">Course: <%= document.course %></p>
+                            <p class="card-text">Semester: <%= document.semester %></p>
+                            <p class="card-text">Subject: <%= document.subject %></p>
+                            <p class="card-text">Topic: <%= document.topic %></p>
+                            <a href="<%= document.youtubelink %>" class="card-link text-primary">YouTube Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eLearning Show</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="elearningshowstyle.css" rel="stylesheet">
+</head>
+<body>
+    <div class="bgimage">
+    <div class="container">
+        <h1 class="text-center mt-5 mb-4 text-primary">Matched Content's</h1>
+        <% foundDocuments.forEach(function(document) { %>
+            <div class="card mb-3 custom-card" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title"><%= document.name %></h5>
+                            <p class="card-text">College: <%= document.college %></p>
+                            <p class="card-text">Course: <%= document.course %></p>
+                            <p class="card-text">Semester: <%= document.semester %></p>
+                            <p class="card-text">Subject: <%= document.subject %></p>
+                            <p class="card-text">Topic: <%= document.topic %></p>
+                            <a href="<%= document.youtubelink %>" class="card-link text-primary">YouTube Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
