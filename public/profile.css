@@ -148,3 +148,7 @@ a:last-child {
   padding: 1em 3em;
   border-radius: 5em;
 }
+.sign, .effect{
+    margin-bottom: 5px;
+
+}
