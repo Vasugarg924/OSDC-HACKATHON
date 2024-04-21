@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Ysabeau+Infant&display=swap");
+
+:root {
+  --theme-color: red;
+  animation: hue 4s linear infinite;
+}
+
+@keyframes text {
+  0%,
+  100% {
+    color: red;
+  }
+  20% {
+    color: rgb(255, 238, 0);
+  }
+  40% {
+    color: rgb(43, 255, 0);
+  }
+  60% {
+    color: rgb(0, 195, 255);
+  }
+  80% {
+    color: rgb(234, 0, 255);
+  }
+}
+@keyframes sm-border {
+  0%,
+  100% {
+    border: 1px solid red;
+  }
+  20% {
+    border: 1px solid rgb(255, 238, 0);
+  }
+  40% {
+    border: 1px solid rgb(43, 255, 0);
+  }
+  60% {
+    border: 1px solid rgb(0, 195, 255);
+  }
+  80% {
+    border: 1px solid rgb(234, 0, 255);
+  }
+}
+@keyframes bg-border {
+  0%,
+  100% {
+    border: 3px solid red;
+  }
+  50% {
+    border: 3px solid red;
+  }
+}
+@keyframes box-shadow {
+  0%,
+  100% {
+    box-shadow: 0px 0px 8px 2px red, 0px 0px 8px 2px red inset;
+  }
+  50% {
+    box-shadow: 0px 0px 6px 1px red, 0px 0px 6px 1px red inset;
+  }
+}
+@keyframes bg-box-shadow {
+  0%,
+  100% {
+    border: 3px solid rgb(255, 89, 89);
+    box-shadow: 0px 0px 8px 2px red, 0px 0px 8px 2px red inset;
+  }
+  20% {
+    border: 3px solid rgb(255, 244, 89);
+    box-shadow: 0px 0px 8px 2px rgb(255, 238, 0),
+      0px 0px 8px 2px rgb(255, 238, 0) inset;
+  }
+  40% {
+    border: 3px solid rgb(119, 255, 91);
+    box-shadow: 0px 0px 8px 2px rgb(43, 255, 0),
+      0px 0px 8px 2px rgb(43, 255, 0) inset;
+  }
+  60% {
+    border: 3px solid rgb(76, 213, 255);
+    box-shadow: 0px 0px 8px 2px rgb(0, 195, 255),
+      0px 0px 8px 2px rgb(0, 195, 255) inset;
+  }
+  80% {
+    border: 3px solid rgb(241, 91, 255);
+    box-shadow: 0px 0px 8px 2px rgb(234, 0, 255),
+      0px 0px 8px 2px rgb(234, 0, 255) inset;
+  }
+}
+
+@keyframes bg {
+  0%,
+  100% {
+    background-color: red;
+  }
+  20% {
+    background-color: rgb(255, 238, 0);
+  }
+  40% {
+    background-color: rgb(43, 255, 0);
+  }
+  60% {
+    background-color: rgb(0, 195, 255);
+  }
+  80% {
+    background-color: rgb(234, 0, 255);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.background {
+  height: 100vh;
+  width: 100vw;
+  background-color: #0e0e0e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  /* transition-property: all; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: white;
+
+  animation: bg-box-shadow 8s linear infinite;
+
+  border-radius: 8px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0px 0px 8px 2px var(--theme-color),
+    0px 0px 8px 2px var(--theme-color) inset;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.container input[type="email"],
+.container input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  /* border: 1px solid var(--theme-color); */
+  animation: sm-border 8s linear infinite;
+
+  background-color: transparent;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+.container input[type="email"]:focus,
+.container input[type="password"]:focus {
+  border: 1px solid rgb(0, 238, 255);
+  outline: none;
+  /* box-shadow: 0px 0px 6px 1px var(--theme-color),
+    0px 0px 6px 1px var(--theme-color) inset; */
+}
+
+h2 {
+  font-size: 32px;
+  margin-top: 38px;
+  margin-bottom: 50px;
+  /* color: var(--theme-color); */
+  animation: text 8s linear infinite;
+  font-family: "Orbitron", sans-serif;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+  width: 380px;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: white;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+
+.forgot-password {
+  font-size: 14px;
+  color: #fafafa;
+  text-decoration: none;
+}
+.forgot-password:hover {
+  color: rgb(255, 109, 11);
+}
+
+.login-button {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  color: #fff;
+  /* background-color: var(--theme-color); */
+  animation: bg 8s linear infinite;
+
+  border: none;
+  border-radius: 4px;
+  color: black;
+  cursor: pointer;
+  font-family: "Orbitron", sans-serif;
+}
+.login-button:hover {
+  box-shadow: 0px 0px 8px 1px rgb(255, 255, 255);
+  /* animation: bg-box-shadow 8s linear infinite; */
+}
+
+.signup-text {
+  font-size: 16px;
+  margin-top: 24px;
+  font-family: "Ysabeau Infant", sans-serif;
+  margin-bottom: 95px;
+}
+
+.signup-link {
+  /* color: #74e8fa; */
+  padding: 9px;
+  text-decoration: none;
+  animation: text 8s linear infinite;
+}
+.signup-link:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(37, 37, 37);
+  padding: 9px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 20px 50px;
+
+    margin: 45px;
+  }
+
+  .container h2 {
+    font-size: 24px;
+    margin-top: 32px;
+    margin-bottom: 46px;
+  }
+
+  .container .form-group {
+    margin-bottom: 20px;
+  }
+
+  .container input[type="email"],
+  .container input[type="password"] {
+    font-size: 14px;
+  }
+  .form-group {
+    width: 100%;
+    width: 210px;
+  }
+
+  .container .forgot-password,
+  .container .signup-text {
+    font-size: 12px;
+    margin-bottom: 80px;
+  }
+
+  .container .login-button {
+    padding: 10px;
+    font-size: 16px;
+  }
+}

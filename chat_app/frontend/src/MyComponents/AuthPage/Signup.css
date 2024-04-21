@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Ysabeau+Infant&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.Rbackground {
+  height: 100vh;
+  width: 100vw;
+  background-color: #0e0e0e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Rcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  color: white;
+  border: 3px solid rgb(220, 129, 248);
+  border-radius: 8px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0px 0px 8px 2px rgb(191, 28, 255),
+    0px 0px 8px 2px rgb(191, 28, 255) inset;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.Rcontainer input[type="name"],
+.Rcontainer input[type="email"],
+.Rcontainer input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid rgb(171, 241, 250);
+
+  background-color: transparent;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+.Rcontainer input[type="name"]:focus,
+.Rcontainer input[type="email"]:focus,
+.Rcontainer input[type="password"]:focus {
+  border: 1px solid rgb(204, 0, 255);
+  outline: none;
+  box-shadow: 0px 0px 6px 1px rgb(235, 80, 255),
+    0px 0px 6px 1px rgb(235, 80, 255) inset;
+}
+
+.Rh2 {
+  font-size: 32px;
+  margin-top: 38px;
+  margin-bottom: 50px;
+  color: rgb(209, 26, 255) !important;
+  font-family: "Orbitron", sans-serif;
+}
+
+.Rform-group {
+  margin-bottom: 20px;
+  text-align: left;
+  width: 380px;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+input[type="name"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: white;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+
+.Rforgot-password {
+  font-size: 14px;
+  color: #fafafa;
+  text-decoration: none;
+}
+.Rforgot-password:hover {
+  color: rgb(255, 109, 11);
+}
+
+.Rlogin-button {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #d400ff;
+
+  border: none;
+  border-radius: 4px;
+  color: black;
+  cursor: pointer;
+  font-family: "Orbitron", sans-serif;
+}
+.Rlogin-button:hover {
+  box-shadow: 0px 0px 8px 1px rgb(205, 80, 255);
+}
+
+.Rsignup-text {
+  font-size: 16px;
+  margin-top: 24px;
+  font-family: "Ysabeau Infant", sans-serif;
+  margin-bottom: 95px;
+}
+
+.Rsignup-link {
+  color: #c474fa;
+  text-decoration: none;
+}
+.Rsignup-link:hover {
+  color: rgb(156, 5, 194);
+}
+
+#alert {
+  /* display: none; */
+  visibility: hidden;
+  color: rgb(255, 255, 255);
+  /* float: right; */
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  /* border: 2px solid rgb(240, 0, 0); */
+  border-bottom: 2px solid rgb(236, 0, 0);
+  border-top: 2px solid rgb(221, 0, 0);
+  border-left: 2px solid rgb(248, 0, 0);
+  margin-bottom: 10px;
+  /* margin-right: 10px; */
+  padding: 10px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  box-shadow: 0 0 34px 1px rgb(255, 4, 4) inset;
+  font-family: "Ysabeau Infant", sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+  .Rcontainer {
+    padding: 20px 50px;
+
+    margin: 45px;
+  }
+
+  .Rcontainer h2 {
+    font-size: 24px;
+    margin-top: 32px;
+    margin-bottom: 46px;
+  }
+
+  .Rcontainer .form-group {
+    margin-bottom: 20px;
+  }
+  .Rcontainer input[type="name"],
+  .Rcontainer input[type="email"],
+  .Rcontainer input[type="password"] {
+    font-size: 14px;
+  }
+  .Rform-group {
+    width: 100%;
+    width: 210px;
+  }
+
+  .Rcontainer .forgot-password,
+  .Rcontainer .signup-text {
+    font-size: 12px;
+    margin-bottom: 80px;
+  }
+
+  .Rcontainer .login-button {
+    padding: 10px;
+    font-size: 16px;
+  }
+}
