@@ -1,0 +1,61 @@
+body {
+    background-color: #000; /* Black background color for the page */
+  }
+  
+  .container {
+    max-width: 400px;
+    margin: 150px auto 0; /* Centering the container horizontally and adding 50px margin from the top */
+    padding: 20px;
+    text-align: center;
+    background-color: #808080; /* Gray background color for the container */
+    border: 1px solid #ccc; /* Adding a 1px solid gray border */
+    border-radius: 8px; /* Adding some border radius for rounded corners */
+  }
+  label {
+    display: inline-block;
+    text-align: left; /* Aligning the labels to the left */
+    width: 120px; /* Fixed width for labels */
+    margin-right: 265px; /* Adding margin to move labels further left */
+  }
+  
+  input {
+    margin-bottom: 10px;
+    width: calc(100% - 22px); /* Adjusting the width to fit within the container with some padding */
+    padding: 8px; /* Adding padding to the input fields */
+  }
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #007bff; /* Blue color for the submit button */
+    color: #fff; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Adding border radius for rounded corners */
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+  }
+  
+  #options {
+    margin-top: 20px;
+  }
+#publishNotes,
+#publishLink {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #007bff; /* Blue color for the buttons */
+  color: #fff; /* White text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Adding border radius for rounded corners */
+  margin-right: 10px; /* Adding some margin between buttons */
+}
+
+#publishNotes:hover,
+#publishLink:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+}
+
+
+
+  
