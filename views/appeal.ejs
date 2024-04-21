@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Promotion & Expert Advice</title>
+    <link rel="stylesheet" href="appealstyle.css">
+</head>
+<body>
+    <video autoplay muted loop>
+        <source src="appeal bg video.mp4" type="video/mp4">
+           Your browser does not support the video tag.
+      </video>
+    <div class="container">
+        <div class="promotion-section">
+            <h2>Promote Your Event</h2>
+            <form id="promotion-form">
+                <label for="event-name">Event Name:</label>
+                <input type="text" id="event-name" name="event-name" required>
+                <label for="event-date">Event Date:</label>
+                <input type="text" id="event-date" name="event-date" placeholder="YYYY-MM-DD" required>
+                <label for="event-venue">Event Venue:</label>
+                <input type="text" id="event-venue" name="event-venue" required>
+                <label for="registration-link">Registration Link:</label>
+                <input type="url" id="registration-link" name="registration-link" required>
+                <label for="insta-handle">Instagram Handle:</label>
+                <input type="text" id="insta-handle" name="insta-handle">
+                <label for="twitter-handle">Twitter Handle:</label>
+                <input type="text" id="twitter-handle" name="twitter-handle">
+                <label for="linkedin-handle">LinkedIn Handle:</label>
+                <input type="text" id="linkedin-handle" name="linkedin-handle">
+                <button type="submit">Promote</button>
+            </form>
+        </div>
+        <div class="expert-section">
+            <h2>Ask for Expert Advice</h2>
+            <form id="expert-form">
+                <label for="topic">Topic of Doubt:</label>
+                <input type="text" id="topic" name="topic" required>
+                <button type="submit">Ask</button>
+            </form>
+            <div id="expert-profiles" class="expert-profiles">
+                <!-- Profiles will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+    <script src="appeal.js"></script>
+</body>
+</html>
